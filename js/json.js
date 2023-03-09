@@ -281,16 +281,18 @@ for(let i=0; i<products.length; i++){
     pButton.textContent = "Click Here";
 
   pButton.addEventListener("click", ()=>{
-    console.log(`Title: ${products[i].title} and The Id: ${products[i].id}`)
+    localStorage.setItem(len.id, len.title);
+    console.log(`ID : ${len.id} TITLE ${localStorage.getItem(len.id)}`)
+    // console.log(`Title: ${products[i].title} and The Id: ${products[i].id}`)
     // console.log(`Title: ${len.title} and The Id: ${len.id}`)
    })
 
     titleName.textContent = len.title;
     pCategory.textContent = len.category;
-    productPrice.textContent = len.price;
+    productPrice.textContent = `$ ${len.price}`;
     prodDesc.textContent = len.description;
     pImg.src = len.image
-    pRating.textContent = len.rating.rate;
+    pRating.textContent = `Rating ${len.rating.rate}`;
 
 
     
