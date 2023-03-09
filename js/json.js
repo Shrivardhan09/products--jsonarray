@@ -311,22 +311,3 @@ for(let i=0; i<products.length; i++){
 
     cardP.appendChild(productItem);
 }
-
-
-
-
-// const btnElem = document.getElementById("click-me");
-// const f = (e) => {
-//   console.log(e);
-// };
-// /* btnElem.addEventListener("click", (e) => {
-//   // Body
-//   f(e);
-// }); */
-
-// //btnElem.addEventListener("click", f);
-
-// btnElem.addEventListener("click", (e) => {
-//   // Body
-//   f("title", "id");
-// });
